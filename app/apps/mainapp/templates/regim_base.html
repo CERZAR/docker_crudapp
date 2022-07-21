@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+    <script>
+        API_ROOT = "{{hostname}}"
+        {#BACKEND_VERSION = "{{backend_version}}"#}
+        var reloadTimer = setTimeout(function () {
+            if (window.app != undefined) {
+                clearTimeout(reloadTimer);
+            } else {
+                document.location.reload();
+            }
+        }, 10000);
+    </script>
+    {% block head %}{% endblock head %}
+</head>
+<body>
+<div class="preloader-content"></div>
+</body>
+</html>

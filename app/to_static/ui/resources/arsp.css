@@ -1,0 +1,52 @@
+/* Zoom*/
+/*.def-body-zoom {*/
+/*    -webkit-transform: scale(0.8);*/
+/*    -moz-transform: scale(1);*/
+/*    -ms-transform: scale(1);*/
+/*    -o-transform: scale(1);*/
+/*    transform: scale(1);*/
+/*}*/
+
+/* Авто перенос текста заголовков в гридах */
+.x-column-header-inner .x-column-header-text {
+    white-space: normal;
+}
+
+/* Для центровки текста в fieldLabel. Нужно указать класс => cls: 'fieldlabel-vertical-align' */
+.fieldlabel-vertical-align .x-form-item-label-default
+{
+    /*Выключает padding у fieldlabel, из-за него двухстрочные поля смещаются вниз*/
+    padding-top: unset;
+    /*Выравнивание по центу*/
+    vertical-align:middle;
+}
+
+/* Стиль для окна ошибки*/
+.error-msg-div > .content {
+  display:inline-block;
+  padding: 5px;
+  border: 1px solid #f0c36d;
+  background-color: #f9edbe;
+  max-width: 800px;
+}
+
+.row-deleted {
+    text-decoration: line-through;
+    color: darkred;
+}
+
+.icon-textfield:before {
+    position: absolute;
+    height: 100%;
+    z-index: 9999;
+    left: 5px;
+    font-size: 12px;
+    top: 25%;
+}
+
+.icon-textfield .x-form-text {
+    padding-left: 20px;
+}
+.x-grid-item-focused .x-grid-cell-inner:before {
+    border: 0;
+}
